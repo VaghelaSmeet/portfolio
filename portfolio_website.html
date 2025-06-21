@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smeet Vaghela | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-image: url('https://www.transparenttextures.com/patterns/white-wall-3.png');
+      background-repeat: repeat;
+      background-size: auto;
+      transition: background 0.5s ease, color 0.5s ease;
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out both;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .transition-all {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-sky-100 to-sky-50 text-slate-800 overflow-x-hidden transition-all">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-white shadow z-50 p-2 text-center">
+    <a href="#about" class="mx-2 text-sky-700 hover:underline">About</a>
+    <a href="#skills" class="mx-2 text-sky-700 hover:underline">Skills</a>
+    <a href="#projects" class="mx-2 text-sky-700 hover:underline">Projects</a>
+    <a href="#contact" class="mx-2 text-sky-700 hover:underline">Contact</a>
+  </nav>
+
+  <!-- PAGE 1: Header + About -->
+  <div id="about" class="min-h-screen flex flex-col justify-center pt-16 fade-in">
+    <header class="p-6 text-center border-b-2 border-sky-600">
+      <h1 class="text-4xl font-extrabold text-sky-800 hover:scale-105 transition-transform duration-300">Smeet Vaghela</h1>
+      <p class="text-lg text-slate-600 mt-2">Web Developer & Cybersecurity Enthusiast</p>
+    </header>
+
+    <section class="p-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-sky-700 mb-2 border-b-2 border-sky-500 inline-block">About Me</h2>
+      <p class="text-lg leading-relaxed mt-2">
+        I'm a passionate cybersecurity and web development enthusiast with a focus on building secure and scalable applications. I love participating in hackathons and exploring new technologies to stay ahead of the curve.
+      </p>
+      <p class="text-lg leading-relaxed mt-2">
+        My interests include network security, ethical hacking, front-end frameworks like React, and backend technologies such as Node.js. I'm constantly learning and enjoy working on collaborative projects that challenge my skills.
+      </p>
+    </section>
+
+    <div class="text-center -mt-2">
+      <a href="#skills" class="inline-block animate-bounce text-sky-700 text-3xl">↓</a>
+    </div>
+  </div>
+
+  <!-- PAGE 2: Skills + Projects + Contact + Footer -->
+  <div id="skills" class="min-h-screen flex flex-col justify-center fade-in">
+    <section class="p-8 max-w-4xl mx-auto bg-white shadow rounded-xl my-6">
+      <h2 class="text-2xl font-bold text-sky-900 mb-2">Skills</h2>
+      <div class="grid grid-cols-2 gap-3 text-base">
+        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full hover:bg-sky-200 transition">HTML, CSS, JavaScript</span>
+        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full hover:bg-sky-200 transition">React.js, Node.js</span>
+        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full hover:bg-sky-200 transition">Cybersecurity Tools</span>
+        <span class="bg-sky-100 text-sky-800 px-3 py-1 rounded-full hover:bg-sky-200 transition">Python, Git & GitHub</span>
+      </div>
+    </section>
+  </div>
+
+  <div id="projects" class="min-h-screen flex flex-col justify-center fade-in">
+    <section class="p-6 max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold text-sky-700 mb-4">Projects</h2>
+      <div class="space-y-4">
+        <div class="bg-slate-50 shadow p-4 rounded-lg border-l-4 border-sky-500 hover:shadow-lg transition duration-300">
+          <h3 class="font-bold text-lg">🏆 Hackathon Runner-up @ Atmiya University</h3>
+          <p>Developed a secure web app in which users can search and join existing groups, or create new ones based on topics or academic fields.</p>
+        </div>
+        <div class="bg-slate-50 shadow p-4 rounded-lg border-l-4 border-emerald-500 hover:shadow-lg transition duration-300">
+          <h3 class="font-bold text-lg">💡 Participant @ MSU Hackathon</h3>
+          <p>Implemented real-time messaging, user authentication, chat notifications, and read receipts for a dynamic user experience.</p>
+        </div>
+        <div class="bg-slate-50 shadow p-4 rounded-lg border-l-4 border-blue-500 hover:shadow-lg transition duration-300">
+          <h3 class="font-bold text-lg">🌿 Bliss Terrace</h3>
+          <p>Transform your terrace into a peaceful, garden-like retreat with Bliss Terrace's innovative outdoor design solutions.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="contact" class="min-h-screen flex flex-col justify-center fade-in">
+    <section class="p-6 max-w-4xl mx-auto bg-white shadow rounded-xl my-4">
+      <h2 class="text-2x1 font-bold text-sky-700 mb-2">Contact</h2>
+      <p class="text-base">Email: <a href="mailto:smeet@example.com" class="text-sky-600 hover:underline hover:text-sky-800 transition">vsmeet2004@gmail.com</a></p>
+      <p class="text-base mt-1">Phone: <span class="text-sky-700">+91-7016747997</span></p>
+      <p class="text-base mt-1">Location: <span class="text-sky-700">Rajkot, Gujarat, India</span></p>
+    </section>
+
+    <footer class="bg-sky-800 text-white p-4 mt-4">
+      <div class="flex justify-center space-x-6 text-base">
+        <a href="https://www.linkedin.com/in/smeet-vaghela/" target="_blank" class="hover:underline flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/linkedin.png" alt="LinkedIn" /> LinkedIn
+        </a>
+        <a href="https://github.com/VaghelaSmeet" target="_blank" class="hover:underline flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+          <img src="https://img.icons8.com/ios-glyphs/20/ffffff/github.png" alt="GitHub" /> GitHub
+        </a>
+        <a href="https://yourportfolio.com" target="_blank" class="hover:underline flex items-center gap-2 hover:scale-105 transition-transform duration-300">
+          <img src="https://img.icons8.com/ios-filled/20/ffffff/domain.png" alt="Website" /> Portfolio
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
